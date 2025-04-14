@@ -1,6 +1,9 @@
 # set path for export
 EXPORT_PATH="../client/emscripten_dist/simulation.js"
 MODULE_NAME="Simulation"
+
+mkdir -p ../client/emscripten_dist
+
 # list cpp files to link
 CPP_FILES="src/core/Scenario.cpp src/units/Airbase.cpp src/units/Aircraft.cpp src/units/MovableUnit.cpp src/utils/GeoUtils.cpp src/utils/MathUtils.cpp"
 # compile wasm
